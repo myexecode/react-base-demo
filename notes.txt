@@ -22,3 +22,19 @@
 6, redux安装
 	cnpm install --save redux
 	cnpm install --save react-redux
+	cnpm install --save redux-thunk (redux 中间件)
+
+
+7，redux-thunk兼容redux_dev_tools配置
+	（视频地址：bilibili Redux免费视频教程从基础到高级p16 https://www.bilibili.com/video/av56213747?p=16）
+	import {createStore,applyMiddleware,compose} from 'redux'
+	import thunk from 'redux-thunk'
+	import reducer from './reducer'
+	const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__?
+		window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose;
+	const enhancer = composeEnhancers(applyMiddleware(thunk))
+
+	const store = createStore(reducer, enhancer);
+
+8, redux-saga安装配置：
+	（视频地址：bilibili Redux免费视频教程从基础到高级p18 https://www.bilibili.com/video/av56213747?p=18）
