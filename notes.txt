@@ -12,5 +12,9 @@
 4, antd pc端 按需打包设置、修改主题配置
 	（视频地址：bilibili React-后台管理系统项目实战p9 https://www.bilibili.com/video/av65046173?p=9）
 
-4, react路由安装：
+5, react路由安装：
 	cnpm install react-router-dom --save
+
+5, 路由 组件赖加载：
+	在React 16.6之前的文档中16.5 code-splitting推荐了第三方库React Loadable
+	而在React 16.6的时候，官方提供了新的Api React.lazy，React.lazy目前并不支持SSR服务端渲染
