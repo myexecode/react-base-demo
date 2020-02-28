@@ -38,3 +38,9 @@
 
 8, redux-saga安装配置：
 	（视频地址：bilibili Redux免费视频教程从基础到高级p18 https://www.bilibili.com/video/av56213747?p=18）
+
+9, 接口请求axios安装：
+	cnpm install axios --save
+
+10, react脚手架接口请求反向代理设置：
+	在package.json文件中加入 "proxy" : "https://xxx:xxx"
