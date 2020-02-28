@@ -4,6 +4,7 @@ import React from 'react'
 
 const SRouter = React.lazy(() => import('../views/sRouter/sRouter'));
 const Test = React.lazy(() => import('../views/test/test'));
+const ReduxTest = React.lazy(() => import('../views/reduxTest/reduxTest'));
 
 export default [
     {
@@ -13,5 +14,9 @@ export default [
     {
         path: '/test',
         component: Test
+    },
+    {
+        path: '/reduxTest',
+        component: ReduxTest
     }
 ]

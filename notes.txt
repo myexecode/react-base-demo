@@ -18,3 +18,7 @@
 5, 路由 组件赖加载：
 	在React 16.6之前的文档中16.5 code-splitting推荐了第三方库React Loadable
 	而在React 16.6的时候，官方提供了新的Api React.lazy，React.lazy目前并不支持SSR服务端渲染
+
+6, redux安装
+	cnpm install --save redux
+	cnpm install --save react-redux
