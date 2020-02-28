@@ -1,0 +1,16 @@
+1， 在react中使用@修饰符
+	（视频地址：慕课网-React高级教程之高阶组件-3-1  https://www.imooc.com/video/18255）
+
+2，npm run eject命令： 暴露配置文件
+
+3， react富文本编辑器插件：
+	react-draft-wysiwyg
+	draft-js
+	draftjs-to-html 
+
+
+4, antd pc端 按需打包设置、修改主题配置
+	（视频地址：bilibili React-后台管理系统项目实战p9 https://www.bilibili.com/video/av65046173?p=9）
+
+4, react路由安装：
+	cnpm install react-router-dom --save
