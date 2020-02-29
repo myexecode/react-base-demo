@@ -1,26 +1,26 @@
-// @function px2rem($px){
-//     $rem : 100px;
-//     @return ($px / $rem) + rem;
-// }
+@function px2rem($px){
+    $rem : 100px;
+    @return ($px / $rem) + rem;
+}
 .home{
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
     flex-wrap: wrap;
     .router_item{
-        width: 200px;
-        height: 200px;
+        width: px2rem(200px);
+        height: px2rem(200px);
         text-align: center;
-        line-height: 200px;
+        line-height: px2rem(200px);
         box-shadow: 2px 2px 2px 2px #ccc;
         margin-bottom: 20px;
     }
     .vwBtn{
-        width: 750px;
-        height: 100px;
-        margin: 10px 0;
+        width: px2rem(750px);
+        height: px2rem(100px);
+        margin: px2rem(10px) 0;
         text-align: center;
         background: pink;
-        line-height: 100px;
+        line-height: px2rem(100px);
     }
 }

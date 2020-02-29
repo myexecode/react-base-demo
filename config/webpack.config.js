@@ -106,7 +106,7 @@ module.exports = function (webpackEnv) {
               rootValue: 100,
               unitPrecision: 5,
               propList: ['*'],
-              selectorBlackList: [],
+              selectorBlackList: [/^(.am-)/], // 为了兼容ant- design排除am-开头的类名
               replace: true,
               mediaQuery: false,
               minPixelValue: 0

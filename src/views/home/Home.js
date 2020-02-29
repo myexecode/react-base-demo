@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import routerList from '../../routers'
 
 import './home.scss'
+import 'antd-mobile/dist/antd-mobile.css';
 
 class Home extends Component {
 
