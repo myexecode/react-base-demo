@@ -140,5 +140,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "postcss-pxtorem": "^4.0.1"
   }
 }

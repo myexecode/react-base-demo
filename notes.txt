@@ -44,3 +44,36 @@
 
 10, react脚手架接口请求反向代理设置：
 	在package.json文件中加入 "proxy" : "https://xxx:xxx"
+
+11, 移动端适配方案：
+	1 设置html根标签字号，以750设计稿为例(注意设置完毕，要给body设置默认字体一般是32px,否则页面默认字体会很大)
+			// designWith-设计稿尺寸
+			function setHtmlFontSizeFn(designWith) {
+			let resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+			function recalc(){
+				let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+				let htmlDom = document.getElementsByTagName('html')[0];
+				htmlDom.style.fontSize = 100 * (htmlWidth / designWith) + 'px';
+			};
+
+			window.addEventListener(resizeEvt, recalc, false);
+			document.addEventListener('DOMContentLoaded', recalc, false);
+			}
+			setHtmlFontSizeFn(750); // js动态设置根标签fontsize
+		或：
+		<style>
+			html{
+				font-size: calc(100vw/750 * 100);
+			}
+		</style>
+
+	2，	利用sass函数把px转成rem
+			@function px2rem($px){
+				$rem : 100px;
+				@return ($px / $rem) + rem;
+			}
+		或：
+			安装postcss-pxtorem插件
+				github地址：https://github.com/cuth/postcss-pxtorem
+				配置方式教程地址：https://blog.csdn.net/siwangdexie_copy/article/details/85097410

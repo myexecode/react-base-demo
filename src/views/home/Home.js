@@ -23,6 +23,7 @@ class Home extends Component {
                         )
                     })
                 }
+                <div className='vwBtn'>杨紫</div>
             </div>
         )
     }
