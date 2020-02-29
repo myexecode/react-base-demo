@@ -12,7 +12,7 @@
 4, antd pc端 按需打包设置、修改主题配置
 	（视频地址：bilibili React-后台管理系统项目实战p9 https://www.bilibili.com/video/av65046173?p=9）
 
-5, react路由安装：
+5, react路由安装：(官方文档在github上)
 	cnpm install react-router-dom --save
 
 5, 路由 组件赖加载：

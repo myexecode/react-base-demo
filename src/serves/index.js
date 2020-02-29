@@ -1,8 +1,4 @@
-import {
-    axiosSend,
-    getReq,
-    postReq
-} from './ajax';
+import { axiosSend, getReq, postReq } from './ajax';
 
 const baseUrl = 'https://m.toutiao.com';
 

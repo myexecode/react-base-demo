@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    .router_item{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        box-shadow: 2px 2px 2px 2px #ccc;
+        margin-bottom: 20px;
+    }
+}

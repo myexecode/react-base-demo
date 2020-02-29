@@ -5,18 +5,27 @@ import React from 'react'
 const SRouter = React.lazy(() => import('../views/sRouter/sRouter'));
 const Test = React.lazy(() => import('../views/test/test'));
 const ReduxTest = React.lazy(() => import('../views/reduxTest/reduxTest'));
+const Home = React.lazy(() => import('../views/home/Home'));
 
 export default [
     {
+        path: '/',
+        component: Home,
+        sNavTitle: '首页'
+    },
+    {
         path: '/sRouter/:id',
-        component: SRouter
+        component: SRouter,
+        sNavTitle: '路由'
     },
     {
         path: '/test',
-        component: Test
+        component: Test,
+        sNavTitle: '测试'
     },
     {
         path: '/reduxTest',
-        component: ReduxTest
+        component: ReduxTest,
+        sNavTitle: 'redux'
     }
 ]
