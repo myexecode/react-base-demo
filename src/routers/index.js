@@ -6,6 +6,7 @@ const SRouter = React.lazy(() => import('../views/sRouter/sRouter'));
 const Test = React.lazy(() => import('../views/test/test'));
 const ReduxTest = React.lazy(() => import('../views/reduxTest/reduxTest'));
 const Home = React.lazy(() => import('../views/home/Home'));
+const LifeCycle = React.lazy(() => import('../views/LifeCycle/LifeCycle'));
 
 export default [
     {
@@ -27,5 +28,10 @@ export default [
         path: '/reduxTest',
         component: ReduxTest,
         sNavTitle: 'redux'
+    },
+    {
+        path: '/LifeCycle',
+        component: LifeCycle,
+        sNavTitle: '生命周期'
     }
 ]
