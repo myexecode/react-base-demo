@@ -147,5 +147,6 @@
     "customize-cra": "^0.9.1",
     "postcss-pxtorem": "^4.0.1",
     "react-app-rewired": "^2.1.5"
-  }
+  },
+  "proxy": "https://gw.m.163.com"
 }

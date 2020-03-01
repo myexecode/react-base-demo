@@ -7,6 +7,7 @@ const Test = React.lazy(() => import('../views/test/test'));
 const ReduxTest = React.lazy(() => import('../views/reduxTest/reduxTest'));
 const Home = React.lazy(() => import('../views/home/Home'));
 const LifeCycle = React.lazy(() => import('../views/LifeCycle/LifeCycle'));
+const AxiosTest = React.lazy(() => import('../views/AxiosTest'));
 
 export default [
     {
@@ -33,5 +34,10 @@ export default [
         path: '/LifeCycle',
         component: LifeCycle,
         sNavTitle: '生命周期'
+    },
+    {
+        path: '/AxiosTest',
+        component: AxiosTest,
+        sNavTitle: 'axios'
     }
 ]
