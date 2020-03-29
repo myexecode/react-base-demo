@@ -8,6 +8,8 @@ const ReduxTest = React.lazy(() => import('../views/reduxTest/reduxTest'));
 const Home = React.lazy(() => import('../views/home/Home'));
 const LifeCycle = React.lazy(() => import('../views/LifeCycle/LifeCycle'));
 const AxiosTest = React.lazy(() => import('../views/AxiosTest'));
+const Hooks = React.lazy(() => import('../views/hooks'));
+const HighComponent = React.lazy(() => import('../views/highComponent'));
 
 export default [
     {
@@ -39,5 +41,15 @@ export default [
         path: '/AxiosTest',
         component: AxiosTest,
         sNavTitle: 'axios'
+    },
+    {
+        path: '/hooks',
+        component: Hooks,
+        sNavTitle: 'hooks'
+    },
+    {
+        path: '/HighComponent',
+        component: HighComponent,
+        sNavTitle: 'HighComponent'
     }
 ]
