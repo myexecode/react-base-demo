@@ -144,6 +144,8 @@
     ]
   },
   "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "babel-preset-stage-2": "^6.24.1",
     "customize-cra": "^0.9.1",
     "postcss-pxtorem": "^4.0.1",
     "react-app-rewired": "^2.1.5"

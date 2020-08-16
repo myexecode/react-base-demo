@@ -1,4 +1,4 @@
-import { axiosSend, getReq, postReq } from './ajax';
+import { getReq } from './ajax';
 
 const baseUrl = ''; 
 // const baseUrl = '/api'; 

@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
-
-import { Button } from 'antd-mobile';
+import { Provider } from './testContext'
+import Testa from './testa'
+const store = {
+    a: 1
+}
 
 class test extends Component {
 
     render() {
         return (
-            <div>
-                test
-                <Button type="primary">primary</Button>
-            </div>
+            <Provider value={store} >
+                <Testa />
+            </Provider>
         )
     }
 }
