@@ -3,7 +3,7 @@ import React from 'react'
 // import Test from '../views/test/test'
 
 const SRouter = React.lazy(() => import('../views/sRouter/sRouter'));
-const Test = React.lazy(() => import('../views/test/test'));
+const Test = React.lazy(() => import('../views/test'));
 const ReduxTest = React.lazy(() => import('../views/reduxTest/reduxTest'));
 const Home = React.lazy(() => import('../views/home/Home'));
 const LifeCycle = React.lazy(() => import('../views/LifeCycle/LifeCycle'));

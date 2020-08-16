@@ -10,6 +10,7 @@ function Context({ name }) {
         return name;
     }
 
+    
     let getname = useMemo(() => propsfn(), [name]); // 只有name发生改变时才执行propsfn函数，节省性能
 
     return (

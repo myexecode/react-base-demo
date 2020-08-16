@@ -1,0 +1,10 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        "react/jsx-uses-react": 0,
+        "no-unused-vars": 0
+    }
+}
