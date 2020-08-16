@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-import Slot from '../../components/Slot'
+import Tif from '../../components/Tif'
+import {Button} from 'antd-mobile'
 
 export default class Test extends Component {
+
+    
     render() {
         return (
-            <Slot>
-                {{
-                    a: <div>kkkkkkkkkkk</div>
-                }}
-            </Slot>
+            <div>
+                <Tif $if={true} >aaa</Tif>
+                <Button type='primary' >按钮</Button>
+            </div>
         )
     }
 }

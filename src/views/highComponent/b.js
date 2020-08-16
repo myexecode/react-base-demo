@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import A from './a'
-
+@A
 class B extends Component {
     render() {
         return (
@@ -12,4 +12,4 @@ class B extends Component {
     }
 }
 
-export default A(B);
+export default B;
